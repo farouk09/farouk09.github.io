@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farouk Abdallah - AI & Computer Vision</title>
+    <title>Farouk Abdallah - AI Engineer | LLMs & AI Agents</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
         header { background: #333; color: white; padding: 15px; text-align: center; }
         nav { text-align: center; background: #444; padding: 10px; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
         section { max-width: 900px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-        h2 { color: #333; }
+        h2 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 5px; }
         ul { list-style: none; padding: 0; }
-        li { padding: 5px 0; }
+        li { padding: 8px 0; }
         a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
         footer { text-align: center; padding: 10px; background: #333; color: white; margin-top: 20px; }
         .profile-img { display: block; margin: 0 auto; border-radius: 50%; width: 150px; height: 150px; }
         .download-btn { display: block; width: 200px; margin: 20px auto; padding: 10px; text-align: center; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .skill-category { background: #f9f9f9; padding: 15px; border-radius: 5px; border-left: 3px solid #007bff; }
+        .skill-category h3 { margin-top: 0; color: #007bff; }
+        .contact-info { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     </style>
 </head>
 <body>
     <header>
         <h1>Farouk Abdallah</h1>
-        <p>AI Engineer | Computer Vision | Generative AI</p>
+        <p>Co-Founder & CTO at ZELINQA — The Questioning Intelligence | AI Engineer | LLMs, AI Agents</p>
     </header>
     
     <nav>
@@ -34,46 +39,81 @@
     <section>
         <img src="imgs/img.jpeg" alt="Farouk Abdallah" class="profile-img">
         <h2>About Me</h2>
-        <p>As an AI engineer specializing in computer vision and generative AI, I have a strong background in developing large language models for diverse sectors, including healthcare, recruitment, and finance. I hold a Master's degree in Algorithmics and Modeling of Interface Sciences from the University Paris-Saclay and an Engineering degree in Computer Science from the National Higher School of Computer Science. I am currently looking for opportunities starting from August or September 2025. Beyond my professional pursuits, I am passionate about football and chess, which I enjoy during my leisure time.</p>
+        <p>Applied AI engineer specializing in LLMs, AI agents, and production-grade AI systems. I build scalable conversational AI platforms using LangGraph, RAG pipelines, and real-time voice systems. Background in reinforcement learning, computer vision (Edge AI), and distributed computing. Co-Founder & CTO at <a href="https://www.zelinqa.fr/">ZELINQA</a>, developing AI solutions for education orientation (<a href="https://zeskool.fr/">Zeskool</a>) and beyond.</p>
         <a href="cv.pdf" class="download-btn" download>Download CV</a>
     </section>
     
     <section>
         <h2>Education</h2>
         <ul>
-            <li><strong>Master's in Algorithmics and Modeling of Interface Sciences</strong>, University Paris-Saclay (2022-2023)</li>
-            <li><strong>Engineering & Master's in Computer Science</strong>, National Higher School of Computer Science (2017-2022)</li>
+            <li><strong>M2 Algorithmique et Modélisation à l'Interface des Sciences</strong>, Université Paris-Saclay (09/2022 – 10/2023)<br>Reinforcement Learning, Optimization, J2EE</li>
+            <li><strong>Ingénieur / Master en Informatique (Systèmes Informatiques)</strong>, Ecole Nationale Supérieure d'Informatique - ESI (09/2017 – 09/2022)<br>Engineering, Deep Learning, Data Analysis</li>
         </ul>
     </section>
     
     <section>
         <h2>Experience</h2>
         <ul>
-            <li><strong>LLM Research Engineer</strong>, Laboratoire d'Informatique de Grenoble (2024-2025)</li>
-            <li><strong>Data Scientist</strong>, Assystem (2023)</li>
-            <li><strong>Research Engineer on Edge AI</strong>, LAMIH CNRS (2022)</li>
+            <li><strong>LLM Research Engineer</strong>, Laboratoire d'Informatique de Grenoble (02/2024 – Present)<br>
+            Development of LLMs in various domains, conversational agents, confidential patent contribution. <em>LangChain, LoRA, OVH, Qdrant, PostgreSQL, CopilotKit</em></li>
+            <li><strong>Data Scientist</strong>, Assystem (04/2023 – 10/2023)<br>
+            Implementation of multi-level information extraction from CVs. <em>Document AI, Generative AI, LayoutLM, BERT</em></li>
+            <li><strong>Edge AI Research Engineer</strong>, LAMIH CNRS (01/2022 – 06/2022)<br>
+            Optimization of lane detection algorithms for autonomous vehicles. <em>Self-driving cars, Edge and Cloud computing</em></li>
         </ul>
     </section>
     
     <section>
         <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, Java, C++</li>
-            <li>AI Frameworks: Hugging Face, PyTorch, TensorFlow</li>
-            <li>Software Development: FastAPI, Flask, Docker</li>
-            <li>Cloud Computing: AWS, Google Cloud</li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <p>R, Python, JavaScript, Java, C, C++</p>
+            </div>
+            <div class="skill-category">
+                <h3>AI Frameworks</h3>
+                <p>PyTorch, TensorFlow, MMCV, Pandas, NumPy, Scikit-learn, Keras, WandB, OpenCV</p>
+            </div>
+            <div class="skill-category">
+                <h3>LLM/Agent Frameworks</h3>
+                <p>Hugging Face, LangChain, LangGraph, Unsloth AI, Ollama, Qdrant, pgvector, CopilotKit, PEFT, Accelerate</p>
+            </div>
+            <div class="skill-category">
+                <h3>Software Development</h3>
+                <p>FastAPI, Flask, TorchServe, Docker, Git, Redis, Next.js, MinIO (S3 Compatible)</p>
+            </div>
+            <div class="skill-category">
+                <h3>Database</h3>
+                <p>PostgreSQL, Redis, MongoDB, SQLite</p>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud</h3>
+                <p>AWS, OVH, Scaleway, Coolify</p>
+            </div>
+            <div class="skill-category">
+                <h3>Systems</h3>
+                <p>Linux, Bash</p>
+            </div>
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <p>Arabic (Native), French (C2), English (C1)</p>
+            </div>
+        </div>
     </section>
     
     <section>
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:hf_abdallah@esi.dz">hf_abdallah@esi.dz</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/farouk-abdallah/">Farouk Abdallah</a></p>
-        <p>GitHub: <a href="https://github.com/farouk09">farouk09</a></p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:hf_abdallah@esi.dz">hf_abdallah@esi.dz</a></p>
+            <p>Phone: +33 6 56 68 70 84</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/farouk-abdallah/">Farouk Abdallah</a></p>
+            <p>GitHub: <a href="https://github.com/farouk09">farouk09</a></p>
+            <p>Location: Grenoble, France</p>
+        </div>
     </section>
     
     <footer>
-        <p>&copy; 2025 Farouk Abdallah</p>
+        <p>&copy; 2025 Farouk Abdallah | <a href="https://www.zelinqa.fr/" style="color: #fff;">ZELINQA</a></p>
     </footer>
 </body>
 </html>
