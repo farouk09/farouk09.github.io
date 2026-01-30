@@ -12,9 +12,12 @@
         section { max-width: 900px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
         h2 { color: #333; }
         p { color: #555; }
-        .project { margin-bottom: 20px; padding: 15px; background: #eaeaea; border-radius: 5px; }
+        .project { margin-bottom: 25px; padding: 20px; background: #eaeaea; border-radius: 5px; }
         .project a { color: #007bff; text-decoration: none; }
+        .project a:hover { text-decoration: underline; }
         .project img { max-width: 100%; height: auto; display: block; margin-top: 10px; border-radius: 5px; }
+        .tech-stack { font-size: 0.9em; color: #666; margin-top: 10px; }
+        .date { font-size: 0.85em; color: #888; font-style: italic; }
     </style>
 </head>
 <body>
@@ -32,23 +35,43 @@
         <h2>My Projects</h2>
 
         <div class="project">
-            <h3>Layout detection for documents using BEiT</h3>
-            <p>This project focuses on CV parsing and leverages the BEIT model for layout detection. The model consists of three key components:
+            <h3>Scalable Multi-Domain Conversational AI Agents</h3>
+            <p class="date">02/2024 – Present</p>
+            <p>Development of fine-tuned LLMs for conversational agents in medical teleconsultation, recruitment, and school orientation. Design of a modular and scalable conversational AI framework with RAG, ReAct agents, and Chain of Thought reasoning.</p>
+            <p class="tech-stack"><strong>Technologies:</strong> LangGraph, FastAPI, Qdrant, Ollama, Hugging Face, PEFT</p>
+        </div>
 
-Backbone: We employ BEIT (BERT for Image Transformers) as the backbone for pretraining image transformers.
-Neck: Our model incorporates a Feature Pyramid Network (FPN) for improved feature extraction.
-Head: We use Faster R-CNN for object detection and recognition.</p>
-            <p><strong>Technologies Used:</strong> TorchServe, Wandb, Redis RabbitMQ, Hugging Face, LLMs, Document IA, Bert</p>
+        <div class="project">
+            <h3>CV Layout Analysis & Parsing</h3>
+            <p class="date">04/2023 – 10/2023</p>
+            <p>Design and implementation of a layout detection model for CVs using MMCV. Added semi-automatic CV annotation functionality to the Pawls tool. Used multi-modal model (LayoutLM) for NER-based section classification. Tested and adapted an Image-to-Text model for CV processing.</p>
             <p><a href="https://github.com/farouk09/Layout-detection-with-BEiT" target="_blank">GitHub Repository</a></p>
-            <img src="imgs/BEiT.png" alt="BEiT">
+            <p class="tech-stack"><strong>Technologies:</strong> PyTorch, Hugging Face, WandB, TorchServe, Redis, RabbitMQ, LayoutLM, BERT</p>
+            <img src="imgs/BEiT.png" alt="CV Layout Detection">
         </div>
         
         <div class="project">
             <h3>Distributed Computing for Lane Detection Models</h3>
-            <p>We have enhanced the efficiency of lane detection models by streamlining execution time and reducing electric power consumption. The algorithm employs distributed computing during inference, which involves partitioning the neural network into multiple components and determining the optimal edge device for executing each part. Our experiments were conducted on two devices: Jetson TX2 and Jetson AGX Xavier, with the goal of optimizing both execution time and energy consumption.</p>
-            <p><strong>Technologies Used:</strong> Python, TensorFlow, OpenCV, MPI, PyTorch, Jetson Nvidia, Edge IA</p>
+            <p class="date">01/2022 – 06/2022</p>
+            <p>Research on execution time and energy consumption for each neural network layer. Implemented a collaborative inference algorithm for CNN models between two Edge devices (Jetson TX2 and Jetson AGX Xavier). Benchmarked over 20 lane detection models for autonomous vehicles.</p>
             <p><a href="https://github.com/farouk09/Distributed-computing-for-lane-detection-models" target="_blank">GitHub Repository</a></p>
-            <img src="imgs/Lane_detection.png" alt="Lane Detection Project Image">
+            <p class="tech-stack"><strong>Technologies:</strong> Python, PyTorch, CuDNN, C, CUDA, Bash, Nvpmodel, Edge AI</p>
+            <img src="imgs/Lane_detection.png" alt="Lane Detection Project">
+        </div>
+
+        <div class="project">
+            <h3>Zelia - AI Education Orientation</h3>
+            <p class="date">2024 – Present</p>
+            <p>AI guide for education orientation covering Parcoursup, MonMaster, and pre-bac programs. Helps students, parents, and adults in reconversion find the right educational path.</p>
+            <p><a href="https://zeskool.fr/" target="_blank">Zeskool Website</a> | <a href="https://www.zelinqa.fr/" target="_blank">ZELINQA</a></p>
+            <p class="tech-stack"><strong>Technologies:</strong> LangGraph, RAG, PostgreSQL, pgvector, Next.js</p>
+        </div>
+
+        <div class="project">
+            <h3>LangGraph Threads Migration Tool</h3>
+            <p class="date">2024</p>
+            <p>A Python tool to export threads, checkpoints, and conversation history from LangGraph Cloud deployments. Supports export to JSON, PostgreSQL, and migration between deployments while preserving metadata and multi-tenancy.</p>
+            <p class="tech-stack"><strong>Technologies:</strong> Python, LangGraph, PostgreSQL, LangSmith</p>
         </div>
     </section>
     
